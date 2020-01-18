@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app1/screens/detail/detail_page.dart';
 import 'package:flutter_app1/widgets/card.dart';
 import 'dart:math' as math;
 
@@ -55,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             ListTile(
               title: Text("Cards"),
-              trailing: Icon(Icons.arrow_forward),
+              trailing: Icon(Icons.receipt),
               onTap: (){
                 Navigator.of(context).pop();
                 Navigator.of(context).push(
@@ -64,8 +65,14 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: Text("Under construct "),
-              trailing: Icon(Icons.stop),
+              title: Text("Details"),
+              trailing: Icon(Icons.description),
+//              onTap: (){
+//                Navigator.of(context).pop();
+//                Navigator.of(context).push(
+//                    MaterialPageRoute( builder: (BuildContext context) => MyDetails(newsli) )
+//                );
+//              },
             ),
           ],
         ),
@@ -89,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
 //          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image(
               image: AssetImage('assets/kitten400x400gif.gif'),
@@ -145,18 +152,25 @@ class _MyHomePageState extends State<MyHomePage> {
 //            Text('asdakdjfklasd'),
 //            Text('KFJKLSDJFLKJS'),
 //            Text('asdakdjfklasd'),
-//            Text(
-//              'You have pushed the button this many times:',
-//            ),
-//            Text(
-//              '$_counter',
-//              style: TextStyle(
-//                fontSize: 34.0,
-//                fontWeight: FontWeight.normal,
-//                color: _color
-//              )
-//              // style: Theme.of(context).textTheme.display1,
-//            ),
+            Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'You have pushed the button this many times:',
+                  ),
+                ),
+                Text(
+                  '$_counter',
+                  style: TextStyle(
+                    fontSize: 34.0,
+                    fontWeight: FontWeight.normal,
+                    color: _color
+                  )
+                  // style: Theme.of(context).textTheme.display1,
+                ),
+              ],
+            ),
           ],
         ),
       ),
