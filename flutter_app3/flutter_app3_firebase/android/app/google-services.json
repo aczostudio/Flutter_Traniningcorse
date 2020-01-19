@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "97163780258",
+    "firebase_url": "https://fluttertraining-d034a.firebaseio.com",
+    "project_id": "fluttertraining-d034a",
+    "storage_bucket": "fluttertraining-d034a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97163780258:android:a198fce8514cd88cc8f7fb",
+        "android_client_info": {
+          "package_name": "com.izalar.flutter_app3_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97163780258-o0qnk32rs60u1qh4jhc20als4mruvs1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9jBZPw5o5TrRBDz23HaZQZUH9F2wHbn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97163780258-o0qnk32rs60u1qh4jhc20als4mruvs1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
